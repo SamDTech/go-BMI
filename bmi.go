@@ -4,24 +4,23 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+
+	"github.com/samdtech/bmi/info"
 )
 
-const mainTitle = "BMI Calculator"
-const separator = "---------------------------------------"
-const weightPrompt = "Please Enter your weight (kg): "
-const heightPrompt = "Please Enter your height (m): "
+
 
 func main() {
 	// Output Information
-	fmt.Println(mainTitle)
-	fmt.Println(separator)
+	fmt.Println(info.MainTitle)
+	fmt.Println(info.Separator)
 
 	// Prompt user for input
-	fmt.Print(weightPrompt)
+	fmt.Print(info.WeightPrompt)
 
 	weightInput, _ := reader.ReadString('\n')
 
-	fmt.Print(heightPrompt)
+	fmt.Print(info.HeightPrompt)
 
 	heightInput, _ := reader.ReadString('\n')
 
